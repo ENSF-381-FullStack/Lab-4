@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 4 - Exercise 2</title>
+</head>
+<body>
+	<h1>JavaScript Lab</h1>
+	<script>
+		// Original Functions
+        /* function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        } */
+        
+        // Default Parameters
+        function add(a, b = 0) {
+            return a + b;
+        }
+
+        function subtract(a, b = 0) {
+            return a - b;
+        }
+
+        // Implementing Arrow Functions
+        const addArrow = (a, b = 0) => a + b;
+        const subtractArrow = (a, b = 0) => a - b;
+        const multiply = (a, b) => a * b;
+        const divide = (a, b) => b !== 0 ? a / b : 'Error: Division by zero';
+
+        // Callback Function
+        function calculator(a, b, operation) {
+            return operation(a, b);
+        }
+
+        // Testing in the console
+        console.log(add(5, 3)); // 8
+        console.log(subtract(10, 4)); // 6
+        console.log(add(7)); // 7 (default parameter test)
+        console.log(subtract(9)); // 9 (default parameter test)
+        console.log(multiply(3, 4)); // 12
+        console.log(divide(8, 2)); // 4
+        console.log(divide(5, 0)); // Error: Division by zero
+        console.log(calculator(6, 2, addArrow)); // 8
+        console.log(calculator(6, 2, multiply)); // 12
+	</script>
+<body>
+</html>
