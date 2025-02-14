@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4 – Exercise 1</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>        
+        //Variable declaration
+        let x = 5
+        let y = 10
+        let z = x + y
+        document.write("The sum of " + x + " and " + y + " is " + z + "." + "<br>");
+        console.log("The sum of " + x + " and " + y + " is " + z + ".");
+            
+        /*const greeting = "say Hi";*/
+        /*console.log(greeting + "<br>")*/
+
+        //String Operations
+        string1 = "Hello, World!";
+        string2 = "JavaScript is fun!";
+        let length = string1.length;
+        console.log(string1 + "<br>" + string2 + "<br>" + "The length of the string is " + length + ".");
+        console.log(string1 + " " + string2);
+        string2 = "awesome";
+        console.log(string2);
+
+        //String Templates
+        name = "Alice";
+        age = 25;
+        console.log(`My name is ${name} and I am ${age} years old`);
+
+        //Working with Dates
+        
+        let weekday = [];
+        weekday.push("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        let date = new Date();
+        let year = date.getFullYear();
+        let month = date.getMonth();
+        let day = date.getDay();
+        let weekdays = date.getDay();
+
+        console.log(date);
+        console.log(year);
+        console.log(month);
+        console.log(day);
+        console.log(weekday[day]);
+
+        </script>
+    </body>
+</html>
